@@ -1,34 +1,40 @@
 .raster {
     background: transparent url(../img/pattern.png) repeat 0 0;
 }
-
-.service ul li{
- text-align:center;
-    font-size:15px;
+.service ul li {
+    text-align: center;
+    font-size: 15px;
 }
-
- #container .sidebar{
-       width: 35px;
-       height: 70px;
-       position: fixed;
-       right: 0px;
-       top: 200px;
-        display:block;
-            z-index:9999;
+#container .sidebar {
+    width: 35px;
+    height: 70px;
+    position: fixed;
+    right: 0px;
+    top: 200px;
+    display: block;
+    z-index: 9999;
     background-color: #444;
-            color:#fff;
-                    
-                }
-        .sidebar span{
-            padding:5px;
-        font-size:25px;
-            display:block;
-            -webkit-transition: background-color 0.2s ease-in;
+    color: #fff;
+}
+.sidebar span {
+    padding: 5px;
+    font-size: 25px;
+    display: block;
+    -webkit-transition: background-color 0.2s ease-in;
     -moz-transition: background-color 0.2s ease-in;
     transition: all 0.2s ease-in;
-        }
-        .sidebar span:hover{
+}
+.sidebar span:hover {
     background-color: #fff;
-            color:#444;        }
-        
-        
+    color: #444;
+}
+#services .fa {
+    display: inline-block;
+    font-size: 80px;
+    position: relative;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+#services .fa-lightbulb-o {
+    margin-left: 110px;
+}

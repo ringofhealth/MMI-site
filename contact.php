@@ -1,17 +1,31 @@
-      <?php
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
- 
-$to = 'youremail@domain.com';
-$subject = 'the subject';
-$message = 'FROM: '.$name.' Email: '.$email.'Message: '.$message;
-$headers = 'From: youremail@domain.com' . "\r\n";
- 
-if (filter_var($email, FILTER_VALIDATE_EMAIL)) { // this line checks that we have a valid email address
-mail($to, $subject, $message, $headers); //This method sends the mail.
-echo "Your email was sent!"; // success message
-}else{
-echo "Invalid Email, please provide an correct email.";
-}
-?>
+<?php
+
+// CHANGE THE THREE VARIABLES BELOW
+
+$EmailFrom = "MergeMediaInc";
+$EmailTo = "mergemediaincteam@gmail.com";
+$Subject = "Contact Form Submission";
+
+$Name = Trim(stripslashes($_POST['name']));
+$Tel = Trim(stripslashes($_POST['subject']));
+$Email = Trim(stripslashes($_POST['email']));
+$Message = Trim(stripslashes($_POST['message']));
+
+// prepare email body text
+$Body = "";
+$Body .= "name: ";
+$Body .= $Name;
+$Body .= "\n";
+$Body .= "Tel: ";
+$Body .= $Tel;
+$Body .= "\n";
+$Body .= "Email: ";
+$Body .= $Email;
+$Body .= "\n";
+$Body .= "Message: ";
+$Body .= $Message;
+$Body .= "\n";
+
+// send email
+$success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
+

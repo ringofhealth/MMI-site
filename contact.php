@@ -29,3 +29,4 @@ $Body .= "\n";
 // send email
 $success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
 
+<?php>

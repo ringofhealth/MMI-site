@@ -17,19 +17,22 @@
     <link href="css/jquery.easy-pie-chart.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'>
     <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="fancy/jquery.fancybox.css" rel="stylesheet">
+
     <link href="css/custom.css" rel="stylesheet">
     <style>
-        html, body {
-                margin: 0;
-                padding: 0;
-                height: 100%;
-            }
-            .sound {
-                position:absolute;
-                right:50px;
-                ;
-                bottom:50px;
-            }
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .sound {
+            position: absolute;
+            right: 50px;
+            ;
+            bottom: 50px;
+        }
     </style>
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="js/jQuery.appear.js"></script>
@@ -39,6 +42,12 @@
     <script type="text/javascript" src="js/easypiechart.js"></script>
     <script type="text/javascript" src="js/canvas.js"></script>
     <script type="text/javascript" src="js/niceScroll.js"></script>
+    <script type="text/javascript" src="fancy/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="fancy/jquery.fancybox.pack.js"></script>
+
+    <script type="text/javascript" src="fancy/helpers/jquery.fancybox-media.js"></script>
+
+
     <!--<script type="text/javascript" src="js/jquery.carouFredSel-6.2.0-min.js"></script>-->
     <!-- PORTFOLIO -->
     <script src="js/jquery.lazyload.js"></script>
@@ -57,32 +66,31 @@
     <script type="text/javascript">
         document.documentElement.className = 'js';
     </script>
-    <script>
-    </script>
+  
     <style>
-        #container .sidebar{
-       width: 35px;
-       height: 105px;
-       position: fixed;
-       right: 0px;
-       top: 200px;
-        display:block;
-            z-index:9999;
+        #container .sidebar {
+            width: 35px;
+            height: 105px;
+            position: fixed;
+            right: 0px;
+            top: 200px;
+            display: block;
+            z-index: 9999;
             background-color: #444;
-            color:#fff;
-
-                }
-        .sidebar a{
-            padding:5px;
-        font-size:25px;
-            display:block;
-            -webkit-transition: background-color 0.2s ease-in;
-    -moz-transition: background-color 0.2s ease-in;
-    transition: all 0.2s ease-in;
+            color: #fff;
         }
-        .sidebar a:hover{
-    background-color: #fff;
-            color:#444;        }
+        .sidebar a {
+            padding: 5px;
+            font-size: 25px;
+            display: block;
+            -webkit-transition: background-color 0.2s ease-in;
+            -moz-transition: background-color 0.2s ease-in;
+            transition: all 0.2s ease-in;
+        }
+        .sidebar a:hover {
+            background-color: #fff;
+            color: #444;
+        }
     </style>
 
 
@@ -206,7 +214,11 @@
 
 
                             </p>
-                            <p>We boast a team of friendly, topnotch professionals who have proven themselves in a variety of creative fields. Our unique and highly-motivated team tailors each project to your needs, budget and specific expectations, making Merge Media the perfect service for any company, small or large.</p>
+
+
+                            	<a class="fancybox-media" onclick="$('.player').toggleVolume()" href="http://www.youtube.com/watch?v=opj24KnzrWo">Youtube</a>
+
+                            <p >We boast a team of friendly, topnotch professionals who have proven themselves in a variety of creative fields. Our unique and highly-motivated team tailors each project to your needs, budget and specific expectations, making Merge Media the perfect service for any company, small or large.</p>
                         </section>
                     </div>
                     <!-- end of .sizers -->
@@ -243,7 +255,170 @@
                     </div>
                     <!-- end of .sizers -->
                 </div>
+                <section id="recent-work">
+                    <h3 class="section_name">Portfolio</h3>
+                    <ul id="gallery">
 
+                        <li id="fullPreview" class="clearfix" style="display: none;">
+                            <img src="img/full/10.jpg" alt="portfolio_img">
+                            <div class="fullCaption">
+                                <strong>Day, Month, Year:</strong> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                            </div>
+                            <figure class="close"></figure>
+                        </li>
+                        <!-- end of #fullPreview -->
+
+                        <li>
+                            <a class="fancybox-media" onclick="$('.player').toggleVolume()" href="http://www.youtube.com/watch?v=opj24KnzrWo"></a>
+                            <img data-original="images/team/Craig.jpg"  alt="aticle-image" width="240" height="150" style="display: inline">
+                            <div class="overLayer"></div>
+                            <div class="infoLayer">
+                                <ul>
+                                    <li>
+                                        <h2>
+                                    Project Title     
+                                </h2>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            View Picture
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="projectInfo">
+                                <strong>Day, Month, Year:</strong> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                            </p>
+                        </li>
+                        <!-- end li -->
+
+                        <li>
+                            <a href="images/portfolio_large/2.jpg"></a>
+                            <img data-original="images/portfolio/2.jpg" src="images/portfolio/2.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+                            <div class="overLayer"></div>
+                            <div class="infoLayer">
+                                <ul>
+                                    <li>
+                                        <h2>
+                                    Project Title     
+                                </h2>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            View Picture
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="projectInfo">
+                                <strong>Day, Month, Year:</strong> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                            </p>
+                        </li>
+                        <!-- end li -->
+
+                        <li>
+                            <a href="images/portfolio_large/3.jpg"></a>
+                            <img data-original="images/portfolio/3.jpg" src="images/portfolio/3.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+                            <div class="overLayer"></div>
+                            <div class="infoLayer">
+                                <ul>
+                                    <li>
+                                        <h2>
+                                    Project Title     
+                                </h2>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            View Picture
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="projectInfo">
+                                <strong>Day, Month, Year:</strong> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                            </p>
+                        </li>
+                        <!-- end li -->
+
+                        <li>
+                            <a href="images/portfolio_large/4.jpg"></a>
+                            <img data-original="images/portfolio/4.jpg" src="images/portfolio/4.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+                            <div class="overLayer"></div>
+                            <div class="infoLayer">
+                                <ul>
+                                    <li>
+                                        <h2>
+                                    Project Title     
+                                </h2>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            View Picture
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="projectInfo">
+                                <strong>Day, Month, Year:</strong> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                            </p>
+                        </li>
+                        <!-- end li -->
+
+                        <li>
+                            <a href="images/portfolio_large/5.jpg"></a>
+                            <img data-original="images/portfolio/5.jpg" src="images/portfolio/5.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+                            <div class="overLayer"></div>
+                            <div class="infoLayer">
+                                <ul>
+                                    <li>
+                                        <h2>
+                                    Project Title     
+                                </h2>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            View Picture
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="projectInfo">
+                                <strong>Day, Month, Year:</strong> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                            </p>
+                        </li>
+                        <!-- end li -->
+
+                        <li>
+                            <a href="images/portfolio_large/6.jpg"></a>
+                            <img data-original="images/portfolio/6.jpg" src="images/portfolio/6.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+                            <div class="overLayer"></div>
+                            <div class="infoLayer">
+                                <ul>
+                                    <li>
+                                        <h2>
+                                    Project Title     
+                                </h2>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            View Picture
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="projectInfo">
+                                <strong>Day, Month, Year:</strong> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                            </p>
+                        </li>
+                        <!-- end li -->
+
+     
+                        <!-- end li -->
+
+                        
+                    </ul>
+                </section>
+                <!--RECENT WORK SECTION-->
 
                 <!-- CONTACT US -->
                 <div id="fr_contact" class="clearfix">
@@ -326,46 +501,50 @@
     <!--CUSTOM JS-->
     <script type="text/javascript" src="js/custom.js"></script>
     <script>
-       $("#ajax_contact_form").validate({
-           rules: {
+        $("#ajax_contact_form").validate({
+            rules: {
 
 
-            email: {
-            required: true,
-            email: true
-
-            }
-
-
+                email: {
+                    required: true,
+                    email: true
 
                 }
+
+
+
+            }
         });
     </script>
 
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('#gallery').least({
                 random: 0,
             });
+            
+$('.fancybox-media').fancybox({
+		openEffect  : 'none',
+		closeEffect : 'none',
+		helpers : {
+			media : {},
+            
+               overlay: {
+                locked: false
+                }
+		}
+	});
         });
 
 
 
-        $(function() {
-            $('.chart').easyPieChart({
-                barColor: 'rgba(255,255,255,0.7)',
-                trackColor: 'rgba(0,0,0,0.7)',
-                scaleColor: false,
-                lineWidth: 5,
-                size: 80
-            });
-        });
+       
     </script>
 
     <script>
-        (function(i, s, o, g, r, a, m) {
+        (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
+            i[r] = i[r] || function () {
                 (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date();
             a = s.createElement(o),
